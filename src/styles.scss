@@ -1,0 +1,118 @@
+@import 'src/my-theme.scss';
+*{
+  font-family: 'Roboto';
+  font-size: 15px;
+  font-weight: 500;
+ }
+
+.jumbotron {
+  background-color: #021e4b;
+}
+
+h1{
+	color: white;
+	margin-left: 10%;
+	font-weight: 500;
+}
+
+#mainNavbar{
+  width: 670px;
+  height: 41px;
+}
+
+.active:after {
+  content: "";
+  display: block;
+  border: 7px solid #003273;
+  border-bottom-color: white;
+  position: absolute;
+  bottom: 0px;
+  left: 52%;
+  margin-left: -12px;
+}
+
+/*#fg{
+	margin-left: 14.5%;
+	margin-top: 3%;
+}*/
+
+.reviewbox{
+  width: 369px;
+  height: 35px;
+  background-color: #008ace;
+
+  display: block;
+ }
+
+#rev{
+  font-family: Roboto;
+  margin-top: 0.5em;
+  margin-left: 2em;
+  color: #ffffff;
+}
+
+.circle{
+  height: 30px;
+  width: 30px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+#review{
+  
+  font-family: 'PT Serif';
+  font-size: 15px;
+  color: #9b9b9b;
+}
+
+.card-body{
+	border-bottom: 1px solid #9b9b9b;
+	}
+
+#view{
+  width: 100px;
+  height: 18px;
+  font-family: 'Roboto';
+  font-size: 15px;
+  font-weight: 500;
+  color: #008ace;
+  margin-left: 40% 
+}
+
+@media screen and (max-width: 768px){
+	.reviewbox{
+		width: 500px;
+	}
+	
+}
+
+.mat-form-field
+{ 
+  width:102% !important; 
+}
+
+#firstformtable td:first-child{
+    padding-right: 15px;
+}
+
+#firstformtable td:nth-child(2){
+    padding-right: 15px;
+}
+
+#firstformtable td:nth-child(3){
+    padding-right: 15px;
+}
+
+
+small{
+  color: #a8adaf;
+  padding: 0;
+}
+
+#update{
+  width: 134px;
+  height: 36px;
+  border: solid 1px;
+  background-color: #003273;
+}

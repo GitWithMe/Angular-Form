@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>
+$(document).ready(function(){
+  $("#btn").click(function(){
+    $("body").append("<app-root></app-root>");
+  });
+  
+});
+</script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+   <!--  <link rel="stylesheet" type="text/css" href="style.css"> -->
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <title>Mim Essay Assignment</title>
+  </head>
+  <body>
+    <div class="jumbotron p-lg-5 p-2 mb-lg-5 mb-0" style="background-color: #021e4b;">
+      <h1>PROFILE</h1>
+  </div>
+  <div class="container col-lg-6 ml-lg-5 ml-0">
+    <div class="row">
+      <nav id="mainNavbar" class="navbar navbar-expand navbar-light" style="background-color: #003273">
+  <a class="navbar-brand" href="#"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav container-fluid nav-fill">
+      <a class="nav-item nav-link" style="color: #4889cb;" href="#">BASIC PROFILE</a>
+      <a class="nav-item nav-link active" style="color: white;" href="#">EDUCATION</a>
+      <a class="nav-item nav-link" style="color: #4889cb;" href="#">PRERFENCES</a>
+    </div>
+  </div>
+
+</nav>
+
+    </div>
+     <div class="container col-lg-6 mt-lg-5 mt-3"> 
+     <p class="mb-0"><strong>Post Graduation</strong></p>
+     <app-root></app-root>
+     <div class="container">
+     <button id="update" class="btn btn-primary mt-3 ml-5" type="submit">Update</button></div>
+     </div>
+</div>
+  
+   <div class="container d-flex justify-content-end mt-lg-0 mt-5">
+    <div class="row"> 
+    <div class="reviewbox">
+      <div class="container">
+   <p id="rev">Reviews <i style="margin-left: 70%;" data-toggle="collapse" data-target="#collapseExample" class="fas fa-minus"></i></p>  </div>
+ 
+   <div id="collapseExample" class="container panel-collapse collapse show">
+<div class="card border-0 ml-4">
+      <div class="card-body pt-2 pl-0">
+          <div class="row">
+
+             <div class="col-md-2">
+                  <div class="circle"></div> 
+                  
+              </div>
+              <div class="col-md-8 pl-1" style="padding-right: 10px">
+                      <p class="mb-1"><strong>Anshul Gupta</strong></p>
+                   <p id="review">There is no upper limit for review. We can write some comment/ tip to frame question here. There is no upper limit for review. We can write some comment/ tip to frame question here. There is no upper limit for review. We can write some comment/ tip to frame question here.</p>
+                 </div>
+                  
+                </div>
+
+        </div>
+       
+      </div>
+   
+      
+      <div class="card border-0 d-none d-sm-block pt-1 ml-3">
+      <div class="card-body pl-0">
+          <div class="row">
+             <div class="col-md-2">
+                  <div class="circle"></div> 
+                  
+              </div>
+              <div class="col-md-8 pl-1" style="padding-right: 10px">
+                      <p class="mb-1"><strong>Anshul Gupta</strong></p>
+                   <p id="review">There is no upper limit for review. We can write some comment/ tip to frame question here. There is no upper limit for review. We can write some comment/ tip to frame question here. There is no upper limit for review. We can write some comment/ tip to frame question here.</p>
+                 </div>
+                  
+                </div>
+
+          </div>
+          </div>
+          <p id="view"><strong>(View More)</strong></p>
+  </div>
+</div>
+  </div>
+</div>
+   
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,71 @@
+	
+	<form [formGroup]="graduateForm">
+		<div formArrayName="postgraduate">
+			<div *ngFor="let group of graduateArray.controls; let i = index;" [formGroupName] = "i">
+	<div rowHeight = "100%">
+				
+				
+				<mat-form-field>
+					<input formControlName="university" matInput placeholder="University">
+				</mat-form-field>
+				<table id="firstformtable">
+					<tr>
+						<td>
+				<mat-form-field style="width: 80px !important">
+					<mat-select formControlName="degree" placeholder="Degree">
+						<mat-option>None</mat-option>
+						<ng-container *ngFor = "let degree of degrees">
+						<mat-option value="{{degree.id}}">{{degree.value}}</mat-option>	
+						</ng-container>
+					</mat-select>
+				</mat-form-field>
+				</td>
+				<td>
+				<mat-form-field>
+					<input formControlName="specialization" matInput placeholder="Specialization">
+				</mat-form-field>
+				</td>
+				</tr>
+			</table>
+				<mat-form-field style="width: 160px !important">
+					<input formControlName="place" matInput placeholder="Place">
+				</mat-form-field>
+				<table id="firstformtable">
+					<tr>
+						<td style="padding-bottom: 10px">
+				      <small>from</small>
+				</td>
+				<td>
+				<mat-form-field style="width: 118px !important">
+				   <input type="month" formControlName="time" matInput placeholder="mmm/yyyy">
+				</mat-form-field>
+				</td>
+				<td style="padding-bottom: 10px">
+					<small>to</small>
+				</td>
+				<td>
+				<mat-form-field style="width: 118px !important">
+				   <input type="month" formControlName="time" matInput placeholder="mmm/yyyy">
+				</mat-form-field>
+				</td>
+				</tr>
+			</table>
+			<mat-form-field>
+			<input formControlName="sample" matInput placeholder="Sample Text">
+		</mat-form-field>
+		<small>There is an upper limit of 500 characters. We can write some comment/ tip to frame question here.</small>
+		</div>
+</div>
+</div>
+		
+	
+</form>
+
+
+<div class="container justify-content-center mt-3" style="color: #008ace;">
+      <div class="row">
+     <i class="material-icons" (click)="addGraduate()">add_circle_outline</i>
+     <h6 class="ml-2"><strong> Add Post Graduation</strong></h6>
+   </div>
+   </div>
+
